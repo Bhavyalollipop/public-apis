@@ -4,8 +4,8 @@
       <b-col><h3 class="control-label">Emoji(s)</h3> </b-col>
     </b-row>
     <b-row>
-      <b-col v-for="(item, index) in categories" :key="index" cols="4">
-        <b-card :title="item.slug" img-top tag="article" style="max-width: 20rem;" class="m-2">
+      <b-col v-for="(item, index) in categories" :key="index" class="col-lg-4 col-md-6 col-sm-12">
+        <b-card :title="item.slug" img-top tag="article" class="m-2">
           <b-card-text>
             {{ item.subCategories.join(',') }}
           </b-card-text>
